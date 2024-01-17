@@ -1,6 +1,9 @@
 import { initializeKeypair } from "./initializeKeypair";
+import { Metaplex, toMetaplexFile } from "@metaplex-foundation/js";
 import * as web3 from "@solana/web3.js";
 import * as token from "@solana/spl-token";
+import * as fs from "fs";
+import { DataV2, createCreateMetadataAccountV2Instruction } from "@metaplex-foundation/mpl-token-metadata";
 
 async function createNewMint(
   connection: web3.Connection,
@@ -67,6 +70,59 @@ async function mintTokens(
   console.log(
     `Mint Token Transaction: https://explorer.solana.com/address/${transactionSignature}?cluster=devnet`
   );
+}
+
+async function createTokenMetadata(
+  connection: web3.Connection,
+  metaplex: Metaplex,
+  mint: web3.PublicKey,
+  user: web3.Keypair,
+  name: string,
+  symbol: string,
+  description: string,
+) {
+  const buffer = fs.readFileSync("assets/pizza.png");
+
+  const file = toMetaplexFile(buffer, "pizza.png");
+
+  const imageUri = await metaplex.storage().upload(file);
+  console.log("image uri:", imageUri);
+
+  const { uri } = await metaplex.nfts().uploadMetadata({
+    name,
+    description,
+    image: imageUri,
+  });
+
+  console.log("metadata uri:", uri);
+
+  const metadataPDA = metaplex.nfts().pdas().metadata({ mint });
+
+  const tokenMetadata = {
+    name,
+    symbol,
+    uri,
+    sellerFeeBasisPoints: 0,
+    creators: null,
+    collection: null,
+    uses: null,
+  } as DataV2;
+
+  const transaction = new web3.Transaction().add(
+    createCreateMetadataAccountV2Instruction(
+      {
+        metadata: metadataPDA,
+        mint,
+        mintAuthority: user.publicKey,
+        payer: user.publicKey,
+        updateAuthority: user.publicKey,
+      },
+    )
+  );
+
+  const transactionSignature = await web3.sendAndConfirmTransaction(connection, transaction, [user]);
+
+  console.log(`Create Metadata Account: https://explorer.solana.com/tx/${transactionSignature}?cluster=devnet`);
 }
 
 async function main() {
