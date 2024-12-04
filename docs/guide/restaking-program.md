@@ -31,7 +31,39 @@ jito-restaking-cli restaking operator initialize
 NCN can have multiple Operators, each NCN <> Operator state stored on `NcnOperatorState` account. Once created, the NCN and operator can both warm-up and cooldown the state to show support for each other.
 
 ```bash
+jito-restaking-cli restaking ncn initialize-ncn-operator-state <NCN> <OPERATOR>
+```
 
+## Ncn warmup/cooldown Operator
+
+NCN can wamup/cooldown relationship with Operator.
+
+Warmup:
+
+```bash
+jito-restaking-cli restaking ncn ncn-warmup-operator <NCN> <OPERATOR>
+```
+
+Cooldown:
+
+```bash
+jito-restaking-cli restaking ncn ncn-cooldown-operator <NCN> <OPERATOR>
+```
+
+## Operator warmup/cooldown NCN
+
+Operator can wamup/cooldown relationship with NCN.
+
+Warmup:
+
+```bash
+jito-restaking-cli restaking ncn operator-warmup-ncn <NCN> <OPERATOR>
+```
+
+Cooldown:
+
+```bash
+jito-restaking-cli restaking ncn operator-cooldown-ncn <NCN> <OPERATOR>
 ```
 
 ## Initialize NCNVaultTicket
@@ -39,7 +71,17 @@ NCN can have multiple Operators, each NCN <> Operator state stored on `NcnOperat
 NCN can also have multiple Vaults, this ticket represents the relationship between an NCN and a Vault. It is created by the NCN to opt in to work with a Vault.
 
 ```bash
+jito-restaking-cli restaking ncn-vault-ticket initialize <NCN> <VAULT>
+```
 
+## Warmup/Cooldown NCNVaultTicket
+
+NCN can wamup/cooldown relationship with Vault.
+
+Warmup:
+
+```bash
+jito-restaking-cli restaking ncn warmup-ncn-vault-ticket <NCN> <VAULT>
 ```
 
 ## Initialize OperatorVaultTicket
@@ -47,5 +89,22 @@ NCN can also have multiple Vaults, this ticket represents the relationship betwe
 Operator can associate with multiple Vaults, this ticket represents the relationship between an Operator and a Vault.
 
 ```bash
-jito-restaking-cli restaking operator initialize-operator-vault-ticket
+jito-restaking-cli restaking operator initialize-operator-vault-ticket <OPERATOR> <VAULT>
 ```
+
+## Warmup/Cooldown OperatorVaultTicket
+
+Operator can warmup/cooldown relationship with Vault.
+
+Wamup:
+
+```bash
+jito-restaking-cli restaking operator warmup-operator-vault-ticket <OPERATOR> <VAULT>
+```
+
+Cooldown:
+
+```bash
+jito-restaking-cli restaking operator cooldown-operator-vault-ticket <OPERATOR> <VAULT>
+```
+
