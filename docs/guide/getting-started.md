@@ -1,15 +1,34 @@
 # Getting Started
 
-The Restaking program is primarily for initializing NCNs and Operators, managing NCN authorities, and registering relationships between NCNs, Operators, and Vaults. 
+To integrate with Jito Restaking, we should register NCN, multiple operators, and vault.
+To interact with onchain program, we provide the Rust and Typescript [clients code].
+In this cookbook, we try to interact with Jito restaking program by CLI.
 
-The Vault program is for creating and managing VRTs, and allowing users to deposit and withdraw their assets. Managing VRTs involves registering relationships with Vaults and NCNs,  managing delegations with Operators, and setting fees.
+[clients code]: https://github.com/jito-foundation/restaking/tree/master/clients
 
-For these programs, as an NCN creator you will need to initialize your NCN and establish relationships with Operators and Vaults, both on chain and off chain.
+## Install CLI
 
-## Initialize NCN
+Clone the Jito Restaking Repo:
 
+```bash
+git clone git@github.com:jito-foundation/restaking.git
+cd restaking
+```
 
-## Initialize Operator
+Build:
 
+```bash
+cargo build --release
+```
 
-## Initialize Vault
+Install the CLI:
+
+```bash
+cargo install --path ./cli --bin jito-restaking-cli
+```
+
+Check CLI has benn isntalled:
+
+```bash
+jito-restaking-cli --help
+```
