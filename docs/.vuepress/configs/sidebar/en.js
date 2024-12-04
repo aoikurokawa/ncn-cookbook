@@ -7,9 +7,9 @@ export const sidebarEn = {
       children: [
         '/guide/introduction.md',
         '/guide/getting-started.md',
+        '/guide/restaking-program.md',
+        '/guide/vault-program.md',
         '/guide/ncn-design.md',
-        '/guide/page.md',
-        '/guide/markdown.md',
         '/guide/assets.md',
         '/guide/i18n.md',
         '/guide/deployment.md',
