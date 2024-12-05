@@ -1,42 +1,6 @@
----
-title: Vault
-head:
-  - - meta
-    - name: title
-      content: NCN Cookbook | Home to NCN References
-  - - meta
-    - name: og:title
-      content: NCN Cookbook | Home to NCN References
-  - - meta
-    - name: description
-      content: The NCN cookbook is a collection of useful examples and references for building on NCN
-  - - meta
-    - name: og:description
-      content: The Solana cookbook is a collection of useful examples and references for building on NCN
-  - - meta
-    - name: og:image
-      content: https://solanacookbook.com/cookbook-sharing-card.png
-  - - meta
-    - name: og:image:alt
-      content: Solana splash card
-  - - meta
-    - name: twitter:card
-      content: summary
-  - - meta
-    - name: twitter:site
-      content: "@solanacookbook"
-  - - meta
-    - name: twitter:image
-      content: "https://solanacookbook.com/cookbook-sharing-card.png"
-  - - meta
-    - name: robots
-      content: index,follow,noodp
-  - - meta
-    - name: googlebot
-      content: index,follow
----
+# Vault
 
-# Accounts
+## Accounts
 
 Accounts within Solana are used to store state. They are an essential
 building block for developing on Solana.
@@ -94,7 +58,7 @@ For example, if you have a counter program that lets you increment a counter, yo
 must create two accounts, one account to store the program's code, and one to store
 the counter.
 
-![](./account_example.jpeg)
+
 
 To prevent an account from being deleted, you must pay rent.
 

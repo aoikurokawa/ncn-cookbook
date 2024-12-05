@@ -2,7 +2,9 @@
 
 The Restaking program is primarily for initializing NCNs and Operators, managing NCN authorities, and registering relationships between NCNs, Operators, and Vaults. 
 
-## Initialize NCN
+## NCN
+
+### Initialize NCN
 
 You can initialize your NCN through the restaking program:
 
@@ -17,16 +19,8 @@ There are several things one can do after registering an NCN:
 - Add and remove support for slashers
 - Delegate funds sent to the NCN from rewards, airdrops, and other sources.
 
-## Initialize Operator
 
-Operators are entities responsible for running NCN software.
-You can initialize Operator through the restaking program:
-
-```bash
-jito-restaking-cli restaking operator initialize
-```
-
-## Initialize NcnOperatorState
+### Initialize NcnOperatorState
 
 NCN can have multiple Operators, each NCN <> Operator state stored on `NcnOperatorState` account. Once created, the NCN and operator can both warm-up and cooldown the state to show support for each other.
 
@@ -34,7 +28,7 @@ NCN can have multiple Operators, each NCN <> Operator state stored on `NcnOperat
 jito-restaking-cli restaking ncn initialize-ncn-operator-state <NCN> <OPERATOR>
 ```
 
-## Ncn warmup/cooldown Operator
+### Ncn warmup/cooldown Operator
 
 NCN can wamup/cooldown relationship with Operator.
 
@@ -50,7 +44,7 @@ Cooldown:
 jito-restaking-cli restaking ncn ncn-cooldown-operator <NCN> <OPERATOR>
 ```
 
-## Operator warmup/cooldown NCN
+### Operator warmup/cooldown NCN
 
 Operator can wamup/cooldown relationship with NCN.
 
@@ -66,7 +60,7 @@ Cooldown:
 jito-restaking-cli restaking ncn operator-cooldown-ncn <NCN> <OPERATOR>
 ```
 
-## Initialize NCNVaultTicket
+### Initialize NCNVaultTicket
 
 NCN can also have multiple Vaults, this ticket represents the relationship between an NCN and a Vault. It is created by the NCN to opt in to work with a Vault.
 
@@ -74,7 +68,7 @@ NCN can also have multiple Vaults, this ticket represents the relationship betwe
 jito-restaking-cli restaking ncn-vault-ticket initialize <NCN> <VAULT>
 ```
 
-## Warmup/Cooldown NCNVaultTicket
+### Warmup/Cooldown NCNVaultTicket
 
 NCN can wamup/cooldown relationship with Vault.
 
@@ -84,7 +78,18 @@ Warmup:
 jito-restaking-cli restaking ncn warmup-ncn-vault-ticket <NCN> <VAULT>
 ```
 
-## Initialize OperatorVaultTicket
+## Operator
+
+### Initialize Operator
+
+Operators are entities responsible for running NCN software.
+You can initialize Operator through the restaking program:
+
+```bash
+jito-restaking-cli restaking operator initialize
+```
+
+### Initialize OperatorVaultTicket
 
 Operator can associate with multiple Vaults, this ticket represents the relationship between an Operator and a Vault.
 
@@ -92,7 +97,7 @@ Operator can associate with multiple Vaults, this ticket represents the relation
 jito-restaking-cli restaking operator initialize-operator-vault-ticket <OPERATOR> <VAULT>
 ```
 
-## Warmup/Cooldown OperatorVaultTicket
+### Warmup/Cooldown OperatorVaultTicket
 
 Operator can warmup/cooldown relationship with Vault.
 
@@ -107,4 +112,3 @@ Cooldown:
 ```bash
 jito-restaking-cli restaking operator cooldown-operator-vault-ticket <OPERATOR> <VAULT>
 ```
-
