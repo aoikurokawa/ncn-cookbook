@@ -26,4 +26,5 @@ NCNs can include:
 - & more
 
 ## References
+- [Let's explore the world of Node Consensus Networks! ](https://x.com/jito_sol/status/1857464841943855371)
 - [Understanding Node Consensus Networks](https://www.jito.network/blog/understanding-node-consensus-networks/)
