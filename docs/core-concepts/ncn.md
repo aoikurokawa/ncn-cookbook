@@ -2,7 +2,7 @@
 
 ## Overview
 
-Key functionalities include:
+### Key functionalities include:
 
 1. Authority Management: Designate and validate admins for various NCN operations.
 2. Operator and Vault Tracking

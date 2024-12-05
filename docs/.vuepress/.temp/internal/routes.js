@@ -2,10 +2,10 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Cooking with NCN"} }],
+  ["/introduction/introduction.html", { loader: () => import(/* webpackChunkName: "introduction_introduction.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/introduction/introduction.html.js"), meta: {"title":"Introduction"} }],
   ["/core-concepts/ncn.html", { loader: () => import(/* webpackChunkName: "core-concepts_ncn.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/core-concepts/ncn.html.js"), meta: {"title":"NCN"} }],
   ["/core-concepts/operator.html", { loader: () => import(/* webpackChunkName: "core-concepts_operator.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/core-concepts/operator.html.js"), meta: {"title":"Operator"} }],
   ["/core-concepts/vault.html", { loader: () => import(/* webpackChunkName: "core-concepts_vault.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/core-concepts/vault.html.js"), meta: {"title":"Vault"} }],
-  ["/introduction/introduction.html", { loader: () => import(/* webpackChunkName: "introduction_introduction.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/introduction/introduction.html.js"), meta: {"title":"Introduction"} }],
   ["/getting-started/getting-started.html", { loader: () => import(/* webpackChunkName: "getting-started_getting-started.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/getting-started/getting-started.html.js"), meta: {"title":"Getting Started"} }],
   ["/getting-started/installation.html", { loader: () => import(/* webpackChunkName: "getting-started_installation.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/getting-started/installation.html.js"), meta: {"title":"Installation"} }],
   ["/references/jito-tip-router.html", { loader: () => import(/* webpackChunkName: "references_jito-tip-router.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/references/jito-tip-router.html.js"), meta: {"title":"Jito Tip Router Program"} }],

@@ -1,6 +1,6 @@
 <template><div><h1 id="ncn" tabindex="-1"><a class="header-anchor" href="#ncn"><span>NCN</span></a></h1>
 <h2 id="overview" tabindex="-1"><a class="header-anchor" href="#overview"><span>Overview</span></a></h2>
-<p>Key functionalities include:</p>
+<h3 id="key-functionalities-include" tabindex="-1"><a class="header-anchor" href="#key-functionalities-include"><span>Key functionalities include:</span></a></h3>
 <ol>
 <li>Authority Management: Designate and validate admins for various NCN operations.</li>
 <li>Operator and Vault Tracking</li>
