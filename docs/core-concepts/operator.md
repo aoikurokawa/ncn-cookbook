@@ -16,7 +16,7 @@
 
 ## Key Components
 
-1. Operator Structure
+### 1. Operator Structure
 
 | Field               | Type   | Description                                           |
 | ------------------- | ------ | ----------------------------------------------------- |
@@ -31,3 +31,7 @@
 | ncn_count           | u64    | Number of NCNs associated with the operator.          |
 | vault_count         | u64    | Number of Vaults associated with the operator.        |
 | operator_fee_bps    | u64    | Operator fee in basis points.                         |
+
+
+## References
+- [Restaking Accounts](https://docs.restaking.jito.network/restaking/00_restaking_accounts/)

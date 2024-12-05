@@ -13,9 +13,7 @@
 <li>NCN and Vault Indexing: Maintains counts of linked NCNs and Vaults for efficient indexing.</li>
 </ol>
 <h2 id="key-components" tabindex="-1"><a class="header-anchor" href="#key-components"><span>Key Components</span></a></h2>
-<ol>
-<li>Operator Structure</li>
-</ol>
+<h3 id="_1-operator-structure" tabindex="-1"><a class="header-anchor" href="#_1-operator-structure"><span>1. Operator Structure</span></a></h3>
 <table>
 <thead>
 <tr>
@@ -82,6 +80,10 @@
 </tr>
 </tbody>
 </table>
+<h2 id="references" tabindex="-1"><a class="header-anchor" href="#references"><span>References</span></a></h2>
+<ul>
+<li><a href="https://docs.restaking.jito.network/restaking/00_restaking_accounts/" target="_blank" rel="noopener noreferrer">Restaking Accounts</a></li>
+</ul>
 </div></template>
 
 

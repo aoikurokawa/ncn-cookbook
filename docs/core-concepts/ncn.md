@@ -1,5 +1,6 @@
 # NCN
 
+
 ## Overview
 
 ### Key functionalities include:
@@ -10,7 +11,7 @@
 
 ## Key Components
 
-1. NCN Structure
+### 1. NCN Structure
 
 The NCN account structure is designed to handle various administrative and operational roles within the network:
 
@@ -29,3 +30,7 @@ The NCN account structure is designed to handle various administrative and opera
 | operator_count      | u64    | Number of operators registered with the NCN.         |
 | vault_count         | u64    | Number of vaults registered with the NCN.            |
 | slasher_count       | u64    | Number of slashers registered with the NCN.          |
+
+
+## References
+- [Restaking Accounts](https://docs.restaking.jito.network/restaking/00_restaking_accounts/)

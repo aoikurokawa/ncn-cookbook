@@ -6,9 +6,7 @@
 <li>Operator and Vault Tracking</li>
 </ol>
 <h2 id="key-components" tabindex="-1"><a class="header-anchor" href="#key-components"><span>Key Components</span></a></h2>
-<ol>
-<li>NCN Structure</li>
-</ol>
+<h3 id="_1-ncn-structure" tabindex="-1"><a class="header-anchor" href="#_1-ncn-structure"><span>1. NCN Structure</span></a></h3>
 <p>The NCN account structure is designed to handle various administrative and operational roles within the network:</p>
 <table>
 <thead>
@@ -86,6 +84,10 @@
 </tr>
 </tbody>
 </table>
+<h2 id="references" tabindex="-1"><a class="header-anchor" href="#references"><span>References</span></a></h2>
+<ul>
+<li><a href="https://docs.restaking.jito.network/restaking/00_restaking_accounts/" target="_blank" rel="noopener noreferrer">Restaking Accounts</a></li>
+</ul>
 </div></template>
 
 
