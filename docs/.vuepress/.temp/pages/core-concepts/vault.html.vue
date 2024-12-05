@@ -1,4 +1,5 @@
-<template><div><h1 id="accounts" tabindex="-1"><a class="header-anchor" href="#accounts"><span>Accounts</span></a></h1>
+<template><div><h1 id="vault" tabindex="-1"><a class="header-anchor" href="#vault"><span>Vault</span></a></h1>
+<h2 id="accounts" tabindex="-1"><a class="header-anchor" href="#accounts"><span>Accounts</span></a></h2>
 <p>Accounts within Solana are used to store state. They are an essential
 building block for developing on Solana.</p>
 <h2 id="facts" tabindex="-1"><a class="header-anchor" href="#facts"><span>Facts</span></a></h2>
@@ -71,7 +72,6 @@ is found below.</p>
 <p>For example, if you have a counter program that lets you increment a counter, you
 must create two accounts, one account to store the program's code, and one to store
 the counter.</p>
-<p><img src="@source/core-concepts/account_example.jpeg" alt=""></p>
 <p>To prevent an account from being deleted, you must pay rent.</p>
 <h3 id="rent" tabindex="-1"><a class="header-anchor" href="#rent"><span>Rent</span></a></h3>
 <p>Storing data on accounts costs SOL to maintain, and it is funded by what is called

@@ -3,21 +3,12 @@
 
 export const navbarEn = [
   {
-    text: "Guide",
+    text: "Home",
     children: [
-      "/guide/introduction.md",
-      "/guide/getting-started.md",
-      "/guide/ncn-design.md",
-      "/guide/page.md",
-      "/guide/markdown.md",
-      "/guide/assets.md",
-      "/guide/i18n.md",
-      "/guide/deployment.md",
-      "/guide/theme.md",
-      "/guide/plugin.md",
-      "/guide/bundler.md",
-      "/guide/migration.md",
-      "/guide/troubleshooting.md",
+      "/introduction/introduction.md",
+      "/getting-started/getting-started.md",
+      "/core-concepts/ncn.md",
+      "/guide/restaking-program.md",
     ],
   },
   {
@@ -39,27 +30,7 @@ export const navbarEn = [
             link: "https://docs.restaking.jito.network/tools/00_cli/",
           }
         ],
-      },
-      {
-        text: "Bundlers",
-        children: [
-          "/reference/bundler/vite.md",
-          "/reference/bundler/webpack.md",
-        ],
-      },
-      {
-        text: "Ecosystem",
-        children: [
-          {
-            text: "Default Theme",
-            link: "https://ecosystem.vuejs.press/themes/default/",
-          },
-          {
-            text: "Plugins",
-            link: "https://ecosystem.vuejs.press/plugins/",
-          },
-        ],
-      },
+      }
     ],
   },
 

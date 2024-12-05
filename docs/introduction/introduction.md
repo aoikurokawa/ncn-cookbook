@@ -25,3 +25,5 @@ NCNs can include:
 - Oracle networks
 - & more
 
+## References
+- [Understanding Node Consensus Networks](https://www.jito.network/blog/understanding-node-consensus-networks/)

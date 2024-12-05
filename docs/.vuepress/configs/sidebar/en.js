@@ -1,12 +1,31 @@
 // import type { SidebarOptions } from '@vuepress/theme-default'
 
 export const sidebarEn = {
-  '/guide/': [
+  '/': [
     {
-      text: 'Guide',
+      text: 'Introduction',
       children: [
-        '/guide/introduction.md',
-        '/guide/getting-started.md',
+        '/introduction/introduction.md',
+      ],
+    },
+    {
+      text: 'Getting Started',
+      children: [
+        '/getting-started/getting-started.md',
+        '/getting-started/installation.md',
+      ],
+    },
+    {
+      text: 'Core Concepts',
+      children: [
+        '/core-concepts/ncn.md',
+        '/core-concepts/operator.md',
+        '/core-concepts/vault.md',
+      ],
+    },
+    {
+      text: 'Guides',
+      children: [
         '/guide/restaking-program.md',
         '/guide/vault-program.md',
         '/guide/ncn-design.md',
@@ -18,6 +37,12 @@ export const sidebarEn = {
         '/guide/bundler.md',
         '/guide/migration.md',
         '/guide/troubleshooting.md',
+      ],
+    },
+    {
+      text: 'References',
+      children: [
+        '/references/jito-tip-router.md',
       ],
     },
   ],
