@@ -1,7 +1,7 @@
 export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
-  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Cooking with NCN"} }],
+  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Cooking with Jito Restaking"} }],
   ["/introduction/introduction.html", { loader: () => import(/* webpackChunkName: "introduction_introduction.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/introduction/introduction.html.js"), meta: {"title":"Introduction"} }],
   ["/core-concepts/ncn.html", { loader: () => import(/* webpackChunkName: "core-concepts_ncn.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/core-concepts/ncn.html.js"), meta: {"title":"NCN"} }],
   ["/core-concepts/operator.html", { loader: () => import(/* webpackChunkName: "core-concepts_operator.html" */"/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/core-concepts/operator.html.js"), meta: {"title":"Operator"} }],
