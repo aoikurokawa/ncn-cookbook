@@ -10,7 +10,6 @@ examples.</p>
 new NCN developers to contribute. Even if you
 don't know how to do something, contributing to the
 cookbook is a great way to learn!</p>
-<p>Check out all open issues <a href="https://github.com/solana-developers/solana-cookbook/issues" target="_blank" rel="noopener noreferrer">here</a>. Contribution guidelines <a href="https://github.com/solana-developers/solana-cookbook#contributing" target="_blank" rel="noopener noreferrer">here</a>. If you find the cookbook is missing a suggestion, please add an issue.</p>
 <h2 id="how-to-read-the-cookbook" tabindex="-1"><a class="header-anchor" href="#how-to-read-the-cookbook"><span>How to Read the Cookbook</span></a></h2>
 <p>The Solana Cookbook is split into different sections, each aimed at a different goal.</p>
 <table>

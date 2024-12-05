@@ -21,6 +21,7 @@
 </ul>
 <h2 id="references" tabindex="-1"><a class="header-anchor" href="#references"><span>References</span></a></h2>
 <ul>
+<li><a href="https://x.com/jito_sol/status/1857464841943855371" target="_blank" rel="noopener noreferrer">Let's explore the world of Node Consensus Networks! </a></li>
 <li><a href="https://www.jito.network/blog/understanding-node-consensus-networks/" target="_blank" rel="noopener noreferrer">Understanding Node Consensus Networks</a></li>
 </ul>
 </div></template>
