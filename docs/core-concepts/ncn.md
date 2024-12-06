@@ -5,8 +5,8 @@
 
 ### Key functionalities include:
 
-1. Authority Management: Designate and validate admins for various NCN operations.
-2. Operator and Vault Tracking
+- Authority Management: Designate and validate admins for various NCN operations.
+- Operator and Vault Tracking
 
 
 ## Key Components
@@ -31,6 +31,16 @@ The NCN account structure is designed to handle various administrative and opera
 | vault_count         | u64    | Number of vaults registered with the NCN.            |
 | slasher_count       | u64    | Number of slashers registered with the NCN.          |
 
+::: tip PDA
+
+```rust
+use jito_restaking_core::ncn::Ncn;
+
+let program_id = jito_restaking_program::id();
+let base_pubkey = pubkey!("base pubkey here");
+let ncn_pubkey = Ncn::find_program_address(&program_id, &base_pubkey).0;
+```
+  :::
 
 ## References
 - [Restaking Accounts](https://docs.restaking.jito.network/restaking/00_restaking_accounts/)

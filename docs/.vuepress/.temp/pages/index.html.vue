@@ -5,13 +5,13 @@ building NCN on Jito Restaking. Each concept and
 reference will focus on specific aspects of NCN
 development while providing additional details and usage
 examples.</p>
-<h2 id="contributing" tabindex="-1"><a class="header-anchor" href="#contributing"><span>Contributing</span></a></h2>
-<p>The Cookbook is designed in a way that makes it easy for
-new NCN developers to contribute. Even if you
-don't know how to do something, contributing to the
-cookbook is a great way to learn!</p>
+<h2 id="integrate-with-jito-restaking" tabindex="-1"><a class="header-anchor" href="#integrate-with-jito-restaking"><span>Integrate with Jito Restaking</span></a></h2>
+<ol>
+<li>Register NCN, Operator, Vault</li>
+<li>Build Core logic of your NCN</li>
+</ol>
 <h2 id="how-to-read-the-cookbook" tabindex="-1"><a class="header-anchor" href="#how-to-read-the-cookbook"><span>How to Read the Cookbook</span></a></h2>
-<p>The Solana Cookbook is split into different sections, each aimed at a different goal.</p>
+<p>The NCN Cookbook is split into different sections, each aimed at a different goal.</p>
 <table>
 <thead>
 <tr>

@@ -7,16 +7,14 @@ reference will focus on specific aspects of NCN
 development while providing additional details and usage 
 examples.
 
-## Contributing
+## Integrate with Jito Restaking
 
-The Cookbook is designed in a way that makes it easy for 
-new NCN developers to contribute. Even if you 
-don't know how to do something, contributing to the 
-cookbook is a great way to learn!
+1. Register NCN, Operator, Vault
+2. Build Core logic of your NCN
 
 ## How to Read the Cookbook
 
-The Solana Cookbook is split into different sections, each aimed at a different goal.
+The NCN Cookbook is split into different sections, each aimed at a different goal.
 
 | Section       | Description |
 |---------------|-----------------------------------------------------------------|
