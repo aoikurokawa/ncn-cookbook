@@ -86,8 +86,12 @@ Operators are entities responsible for running NCN software.
 You can initialize Operator through the restaking program:
 
 ```bash
-jito-restaking-cli restaking operator initialize
+jito-restaking-cli restaking operator initialize <OPERATOR_FEE_BPS>
 ```
+
+Argument
+
+- OPERATOR_FEE_BPS: The operator fee in basis points
 
 ### Initialize OperatorVaultTicket
 

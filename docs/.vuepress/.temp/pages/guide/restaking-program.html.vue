@@ -45,9 +45,13 @@
 <h3 id="initialize-operator" tabindex="-1"><a class="header-anchor" href="#initialize-operator"><span>Initialize Operator</span></a></h3>
 <p>Operators are entities responsible for running NCN software.
 You can initialize Operator through the restaking program:</p>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line">jito-restaking-cli restaking operator initialize</span>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line">jito-restaking-cli restaking operator initialize <span class="token operator">&lt;</span>OPERATOR_FEE_BPS<span class="token operator">></span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="initialize-operatorvaultticket" tabindex="-1"><a class="header-anchor" href="#initialize-operatorvaultticket"><span>Initialize OperatorVaultTicket</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>Argument</p>
+<ul>
+<li>OPERATOR_FEE_BPS: The operator fee in basis points</li>
+</ul>
+<h3 id="initialize-operatorvaultticket" tabindex="-1"><a class="header-anchor" href="#initialize-operatorvaultticket"><span>Initialize OperatorVaultTicket</span></a></h3>
 <p>Operator can associate with multiple Vaults, this ticket represents the relationship between an Operator and a Vault.</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line">jito-restaking-cli restaking operator initialize-operator-vault-ticket <span class="token operator">&lt;</span>OPERATOR<span class="token operator">></span> <span class="token operator">&lt;</span>VAULT<span class="token operator">></span></span>
 <span class="line"></span></code></pre>

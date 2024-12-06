@@ -10,13 +10,13 @@
 
 ### Key functionalities include:
 
-1. Admin Role Management: Allows for delegating responsibilities to specialized admin roles.
-2. Operator Fee Management: Tracks fees charged by operators.
-3. NCN and Vault Indexing: Maintains counts of linked NCNs and Vaults for efficient indexing.
+- Admin Role Management: Allows for delegating responsibilities to specialized admin roles.
+- Operator Fee Management: Tracks fees charged by operators.
+- NCN and Vault Indexing: Maintains counts of linked NCNs and Vaults for efficient indexing.
 
 ## Key Components
 
-1. Operator Structure
+### 1. Operator Structure
 
 | Field               | Type   | Description                                           |
 | ------------------- | ------ | ----------------------------------------------------- |
@@ -31,3 +31,17 @@
 | ncn_count           | u64    | Number of NCNs associated with the operator.          |
 | vault_count         | u64    | Number of Vaults associated with the operator.        |
 | operator_fee_bps    | u64    | Operator fee in basis points.                         |
+
+::: tip PDA
+
+```rust
+use jito_restaking_core::operator::Operator;
+
+let program_id = jito_restaking_program::id();
+let base_pubkey = pubkey!("base pubkey here");
+let operator_pubkey = Operator::find_program_address(&program_id, &base_pubkey).0;
+```
+  :::
+
+## References
+- [Restaking Accounts](https://docs.restaking.jito.network/restaking/00_restaking_accounts/)
