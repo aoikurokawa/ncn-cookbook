@@ -10,7 +10,8 @@ examples.
 ## Integrate with Jito Restaking
 
 1. Register NCN, Operator, Vault
-2. Build Core logic of your NCN
+2. Make relationship with those NCN <> Operator <> Vault
+3. Build Core logic of your NCN
 
 ## How to Read the Cookbook
 

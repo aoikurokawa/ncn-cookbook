@@ -8,6 +8,7 @@ examples.</p>
 <h2 id="integrate-with-jito-restaking" tabindex="-1"><a class="header-anchor" href="#integrate-with-jito-restaking"><span>Integrate with Jito Restaking</span></a></h2>
 <ol>
 <li>Register NCN, Operator, Vault</li>
+<li>Make relationship with those NCN &lt;&gt; Operator &lt;&gt; Vault</li>
 <li>Build Core logic of your NCN</li>
 </ol>
 <h2 id="how-to-read-the-cookbook" tabindex="-1"><a class="header-anchor" href="#how-to-read-the-cookbook"><span>How to Read the Cookbook</span></a></h2>

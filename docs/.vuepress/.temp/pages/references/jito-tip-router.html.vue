@@ -8,6 +8,7 @@
 <h2 id="references" tabindex="-1"><a class="header-anchor" href="#references"><span>References</span></a></h2>
 <ul>
 <li><a href="https://forum.jito.network/t/jip-8-adopt-tiprouter-ncn-protocol-development/413" target="_blank" rel="noopener noreferrer">JIP-8: Adopt TipRouter NCN (Protocol Development)</a></li>
+<li><a href="https://github.com/jito-foundation/jito-tip-router/tree/master" target="_blank" rel="noopener noreferrer">Jito Tip Router Repo</a></li>
 </ul>
 </div></template>
 

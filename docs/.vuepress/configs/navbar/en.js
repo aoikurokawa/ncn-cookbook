@@ -1,16 +1,4 @@
-// import type { NavbarOptions } from '@vuepress/theme-default'
-// import { VERSION } from '../meta.js'
-
 export const navbarEn = [
-  {
-    text: "Home",
-    children: [
-      "/introduction/introduction.md",
-      "/getting-started/getting-started.md",
-      "/core-concepts/ncn.md",
-      "/guide/restaking-program.md",
-    ],
-  },
   {
     text: "Reference",
     children: [
