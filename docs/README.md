@@ -15,10 +15,10 @@ examples.
 
 ## How to Read the Cookbook
 
-The NCN Cookbook is split into different sections, each aimed at a different goal.
+The NCN Cookbook is split into different sections.
 
-| Section       | Description |
-|---------------|-----------------------------------------------------------------|
-| Core Concepts | Building blocks of Solana that are good to know for development |
-| Guides        | Snack-sized guides about different tools for development        |
-| References    | References to commonly needed code snippets                     |
+| Section       | Description                                            |
+|---------------|------------------------------------------------------- |
+| Core Concepts | Jito Restaking account's concepts                      |
+| Guides        | Guides from integrating Jito Restaking to Building NCN |
+| References    | References to some NCN                                 |

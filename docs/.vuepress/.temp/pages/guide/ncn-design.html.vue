@@ -14,7 +14,7 @@
 <h3 id="pricing" tabindex="-1"><a class="header-anchor" href="#pricing"><span>Pricing</span></a></h3>
 <h4 id="tracked-mints" tabindex="-1"><a class="header-anchor" href="#tracked-mints"><span>Tracked Mints</span></a></h4>
 <p>Register all vault's <a href="https://github.com/jito-foundation/restaking/blob/406903e569da657035a2ca71ad16f8a930db6940/vault_core/src/vault.rs#L45" target="_blank" rel="noopener noreferrer">support token</a> mint account that is associated with NCN.
-Anyone can <a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_tracked_mints.rs" target="_blank" rel="noopener noreferrer">initialize</a> and <a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/register_mint.rs" target="_blank" rel="noopener noreferrer">register</a> through Jito Tip Router Program.</p>
+Permissionless Cranker can <a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_tracked_mints.rs" target="_blank" rel="noopener noreferrer">initialize</a> and <a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/register_mint.rs" target="_blank" rel="noopener noreferrer">register</a> through Jito Tip Router Program.</p>
 <h5 id="trackedmints" tabindex="-1"><a class="header-anchor" href="#trackedmints"><span>TrackedMints</span></a></h5>
 <table>
 <thead>
@@ -61,7 +61,7 @@ Anyone can <a href="https://github.com/jito-foundation/jito-tip-router/blob/mast
 </table>
 <h4 id="weight-table" tabindex="-1"><a class="header-anchor" href="#weight-table"><span>Weight Table</span></a></h4>
 <p>Determines the relative weight of assets (supported_mints) deposited in all the Vaults associated with NCN.
-NCN admin can publish <code v-pre>WeightTable</code> each epoch through <a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_weight_table.rs" target="_blank" rel="noopener noreferrer"><code v-pre>initialize_weight_table</code></a> instruction on Jito Tip Router Program.</p>
+Permissionless Cranker can initialize <code v-pre>WeightTable</code> each epoch through <a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_weight_table.rs" target="_blank" rel="noopener noreferrer"><code v-pre>initialize_weight_table</code></a> instruction on Jito Tip Router Program and NCN admin update it.</p>
 <h5 id="weighttable" tabindex="-1"><a class="header-anchor" href="#weighttable"><span>WeightTable</span></a></h5>
 <table>
 <thead>

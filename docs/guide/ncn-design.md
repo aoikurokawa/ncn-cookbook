@@ -20,7 +20,7 @@ NCN consisits of several components:
 #### Tracked Mints
 
 Register all vault's [support token] mint account that is associated with NCN.
-Anyone can [initialize] and [register] through Jito Tip Router Program.
+Permissionless Cranker can [initialize] and [register] through Jito Tip Router Program.
 
 ##### TrackedMints
 
@@ -46,7 +46,7 @@ Anyone can [initialize] and [register] through Jito Tip Router Program.
 #### Weight Table
 
 Determines the relative weight of assets (supported_mints) deposited in all the Vaults associated with NCN.
-NCN admin can publish `WeightTable` each epoch through [`initialize_weight_table`] instruction on Jito Tip Router Program.
+Permissionless Cranker can initialize `WeightTable` each epoch through [`initialize_weight_table`] instruction on Jito Tip Router Program and NCN admin update it.
 
 ##### WeightTable
 

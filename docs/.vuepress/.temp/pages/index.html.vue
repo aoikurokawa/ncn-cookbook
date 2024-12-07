@@ -12,7 +12,7 @@ examples.</p>
 <li>Build Core logic of your NCN</li>
 </ol>
 <h2 id="how-to-read-the-cookbook" tabindex="-1"><a class="header-anchor" href="#how-to-read-the-cookbook"><span>How to Read the Cookbook</span></a></h2>
-<p>The NCN Cookbook is split into different sections, each aimed at a different goal.</p>
+<p>The NCN Cookbook is split into different sections.</p>
 <table>
 <thead>
 <tr>
@@ -23,15 +23,15 @@ examples.</p>
 <tbody>
 <tr>
 <td>Core Concepts</td>
-<td>Building blocks of Solana that are good to know for development</td>
+<td>Jito Restaking account's concepts</td>
 </tr>
 <tr>
 <td>Guides</td>
-<td>Snack-sized guides about different tools for development</td>
+<td>Guides from integrating Jito Restaking to Building NCN</td>
 </tr>
 <tr>
 <td>References</td>
-<td>References to commonly needed code snippets</td>
+<td>References to some NCN</td>
 </tr>
 </tbody>
 </table>
