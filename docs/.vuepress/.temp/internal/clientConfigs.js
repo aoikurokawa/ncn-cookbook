@@ -8,6 +8,7 @@ import * as clientConfig6 from '/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.te
 import * as clientConfig7 from '/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/markdown-tab/config.js'
 import * as clientConfig8 from '/mnt/nvme0n1/dev/ncn-cookbook/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import * as clientConfig9 from '/mnt/nvme0n1/dev/ncn-cookbook/node_modules/@vuepress/theme-default/lib/client/config.js'
+import * as clientConfig10 from '/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/docsearch/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -20,4 +21,5 @@ export const clientConfigs = [
   clientConfig7,
   clientConfig8,
   clientConfig9,
+  clientConfig10,
 ].map((m) => m.default).filter(Boolean)

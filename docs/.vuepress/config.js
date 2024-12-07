@@ -3,6 +3,7 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { sidebarEn } from "./configs/sidebar";
 import { navbarEn } from "./configs/navbar";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
   // set site base to default value
@@ -40,4 +41,8 @@ export default defineUserConfig({
       },
     },
   }),
+
+  plugins: [
+    docsearchPlugin({})
+  ]
 });
