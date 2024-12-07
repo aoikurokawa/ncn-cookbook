@@ -22,11 +22,11 @@
 <li>Validators can delegate the merkle root upload authority to a program derived address owned by the NCN, giving it permission <a href="https://github.com/jito-foundation/jito-tip-router/blob/022fee74773170b76d1f8aad8c8edc71fd387e05/program/src/set_merkle_root.rs#L61-L80" target="_blank" rel="noopener noreferrer">to upload merkle roots</a>.</li>
 <li>After epoch rollover, node operators will each compute the merkle tree and merkle root for each validator and upload it on-chain.</li>
 </ul>
-<p><img src="@source/references/cast_vote.png" alt=""></p>
+<p><img src="@source/references/images/cast_vote.png" alt=""></p>
 <ul>
 <li>On a periodic basis, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.</li>
 </ul>
-<p><img src="@source/references/upload.png" alt=""></p>
+<p><img src="@source/references/images/upload.png" alt=""></p>
 <h2 id="ncn-program" tabindex="-1"><a class="header-anchor" href="#ncn-program"><span>NCN Program</span></a></h2>
 <p>Following the <RouteLink to="/guide/ncn-design.html">NCN design section</RouteLink>, Jito Tip Router consists of:</p>
 <ul>

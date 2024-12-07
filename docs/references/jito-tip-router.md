@@ -23,11 +23,11 @@ The mechanism of the TipRouter NCN is detailed below:
 - Validators can delegate the merkle root upload authority to a program derived address owned by the NCN, giving it permission [to upload merkle roots].
 - After epoch rollover, node operators will each compute the merkle tree and merkle root for each validator and upload it on-chain.
 
-![](./cast_vote.png)
+![](./images/cast_vote.png)
 
 - On a periodic basis, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.
 
-![](upload.png)
+![](./images/upload.png)
 
 [Jito Tip Distribution Program]: https://github.com/jito-foundation/jito-programs/blob/master/mev-programs/programs/tip-distribution/src/lib.rs
 [to upload merkle roots]: https://github.com/jito-foundation/jito-tip-router/blob/022fee74773170b76d1f8aad8c8edc71fd387e05/program/src/set_merkle_root.rs#L61-L80
