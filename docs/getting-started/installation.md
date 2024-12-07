@@ -21,7 +21,7 @@ Install the CLI:
 cargo install --path ./cli --bin jito-restaking-cli
 ```
 
-Check CLI has benn isntalled:
+Check CLI has been isntalled:
 
 ```bash
 jito-restaking-cli --help
