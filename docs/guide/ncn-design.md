@@ -19,7 +19,8 @@ NCN consisits of several components:
 
 #### Tracked Mints
 
-Register vault's [support token] mint account that is associated with NCN.
+Register all vault's [support token] mint account that is associated with NCN.
+Anyone can [initialize] and [register] through Jito Tip Router Program.
 
 ##### TrackedMints
 
@@ -38,9 +39,14 @@ Register vault's [support token] mint account that is associated with NCN.
 | vault_index         | u64               | The index of vault.                                  |
 
 
+[support token]: https://github.com/jito-foundation/restaking/blob/406903e569da657035a2ca71ad16f8a930db6940/vault_core/src/vault.rs#L45
+[initialize]: https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_tracked_mints.rs
+[register]: https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/register_mint.rs
+
 #### Weight Table
 
 Determines the relative weight of assets (supported_mints) deposited in all the Vaults associated with NCN.
+NCN admin can publish `WeightTable` each epoch through [`initialize_weight_table`] instruction on Jito Tip Router Program.
 
 ##### WeightTable
 
@@ -68,10 +74,6 @@ Weight is flexible, if NCNs want to give one asset more "weight" over others, th
   :::
 
 
-NCN admin can publish `WeightTable` each epoch through [`initialize_weight_table`] instruction on Jito Tip Router Program.
-
-
-[support token]: https://github.com/jito-foundation/restaking/blob/406903e569da657035a2ca71ad16f8a930db6940/vault_core/src/vault.rs#L45
 [`initialize_weight_table`]: https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_weight_table.rs
 
 
