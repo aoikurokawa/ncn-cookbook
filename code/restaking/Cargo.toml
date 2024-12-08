@@ -1,0 +1,14 @@
+[package]
+name = "restaking"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jito-restaking-client = { workspace = true }
+jito-restaking-core = { workspace = true }
+jito-vault-client = { workspace = true }
+jito-vault-core = { workspace = true }
+solana-sdk = { workspace = true }
+solana-rpc-client = { workspace = true }
+solana-rpc-client-api = { workspace = true }
+tokio = { workspace = true }

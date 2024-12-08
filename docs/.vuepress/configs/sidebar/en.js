@@ -11,8 +11,8 @@ export const sidebarEn = {
     {
       text: 'Getting Started',
       children: [
-        '/getting-started/getting-started.md',
         '/getting-started/installation.md',
+        '/getting-started/rust-client.md',
       ],
     },
     {
