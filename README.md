@@ -1,5 +1,13 @@
 # NCN Cookbook
 
+## Structure
+
+### docs/
+- topics
+
+### code/
+- code for those topics
+
 ## Buidling
 
 ```bash
