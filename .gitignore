@@ -8,3 +8,7 @@ dist/
 .vuepress/.cache
 # VuePress default build output directory
 .vuepress/dist
+
+# Added by cargo
+
+/target
