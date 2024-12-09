@@ -114,7 +114,7 @@ After consensus reached with more than 2/3, cranker can upload the merkle tree o
 
 **Operator**:
 
-Each operator caluclate the merkle tree to produce merkle root then cast vote with produced merkle root.
+Each operator calculate the merkle tree to produce merkle root then cast vote with produced merkle root.
 
 - [Cast Vote](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/cast_vote.rs)
 
