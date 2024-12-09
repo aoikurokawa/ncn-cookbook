@@ -25,7 +25,9 @@ The mechanism of the TipRouter NCN is detailed below:
 
 ![](./images/cast_vote.png)
 
-- On a periodic basis, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.
+- After each vote, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.
+- Operators can change their vote until consensus is reached, after consensus is reached, they can not change their vote.
+- Once consensus is reached, any operators who have not voted have a fixed window of slots to submit their vote in order to be eligible for rewards.
 
 ![](./images/upload.png)
 
