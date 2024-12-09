@@ -4,3 +4,14 @@
 
 [Jito (Re)staking]: https://github.com/jito-foundation/restaking
 
+## Addresses
+
+| Network | Program   | Address                                      | Version |
+|---------|-----------|----------------------------------------------|---------|
+| Mainnet | Restaking | RestkWeAVL8fRGgzhfeoqFhsqKRchg6aa1XrcH96z4Q  | 0.0.3   |
+| Mainnet | Vault     | Vau1t6sLNxnzB7ZDsef8TLbPLfyZMYXH8WTNqUdm9g8  | 0.0.3   |
+| Testnet | Restaking | RestkWeAVL8fRGgzhfeoqFhsqKRchg6aa1XrcH96z4Q  | 0.0.3   |
+| Testnet | Vault     | Vau1t6sLNxnzB7ZDsef8TLbPLfyZMYXH8WTNqUdm9g8  | 0.0.3   |
+| Devnet  | Restaking | RestkWeAVL8fRGgzhfeoqFhsqKRchg6aa1XrcH96z4Q  | 0.0.3   |
+| Devnet  | Vault     | Vau1t6sLNxnzB7ZDsef8TLbPLfyZMYXH8WTNqUdm9g8  | 0.0.3   |
+
