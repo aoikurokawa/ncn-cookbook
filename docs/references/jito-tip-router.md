@@ -33,7 +33,7 @@ Inside of Stake Meta:
 - validator_node_pubkey: The public key of the validator node.
 - maybe_tip_distribution_meta: Metadata related to tip distribution, if applicable.
     - merkle_root_upload_authority: The authority responsible for uploading the merkle root.
-    - tip_distribution_pubkey: The pulic key owned by the Jito Tip Distribution Program.
+    - tip_distribution_pubkey: The public key owned by the Jito Tip Distribution Program.
     - total_tips: The total amount of tips in the [`TipDistributionAccount`]
     - validator_fee_bps: The validator's cut of tips from [`TipDistributionAccount`], calculated from the on-chain commission fee bps.
 - delegations: Delegations to this validator.
@@ -114,7 +114,7 @@ After consensus reached with more than 2/3, cranker can upload the merkle tree o
 
 **Operator**:
 
-Each operator caluclate the merkle tree to produce merkle root then cast vote with produced merkle root.
+Each operator calculate the merkle tree to produce merkle root then cast vote with produced merkle root.
 
 - [Cast Vote](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/cast_vote.rs)
 

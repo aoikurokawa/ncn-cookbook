@@ -8,7 +8,7 @@
 ### code/
 - code for those topics
 
-## Buidling
+## Building
 
 ```bash
 yarn

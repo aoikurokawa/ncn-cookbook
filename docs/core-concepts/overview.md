@@ -2,7 +2,7 @@
 
 ## Jito Restaking Architecture Overview
 
-Jito Restaking consists of 3 componets:
+Jito Restaking consists of 3 components:
 
 - [NCN](./ncn.md)
 - [Operator](./operator.md)
