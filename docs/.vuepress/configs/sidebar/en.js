@@ -13,6 +13,8 @@ export const sidebarEn = {
       children: [
         '/getting-started/installation.md',
         '/getting-started/rust-client.md',
+        '/getting-started/typescript-client.md',
+        '/getting-started/python-client.md',
       ],
     },
     {

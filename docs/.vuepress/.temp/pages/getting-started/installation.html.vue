@@ -24,6 +24,8 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="typescript" tabindex="-1"><a class="header-anchor" href="#typescript"><span>TypeScript</span></a></h3>
 <p>IN PROGRESS</p>
+<h3 id="python" tabindex="-1"><a class="header-anchor" href="#python"><span>Python</span></a></h3>
+<p>IN PROGRESS</p>
 </div></template>
 
 
