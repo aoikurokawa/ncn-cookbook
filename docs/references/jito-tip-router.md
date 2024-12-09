@@ -21,16 +21,39 @@ The TipRouter NCN will leverage Jito (Re)staking to empower a set of node operat
 The mechanism of the TipRouter NCN is detailed below:
 
 - Validators can delegate the merkle root upload authority to a program derived address owned by the NCN, giving it permission [to upload merkle roots].
-- After epoch rollover, node operators will each compute the merkle tree and merkle root for each validator and upload it on-chain.
+- After the epoch rollover, node operators will compute a 'meta merkle root' — a merkle root derived from a new merkle tree containing all validator merkle trees — and upload it on-chain. This change reduces the number of votes required, as operators now vote on the meta merkle root instead of casting individual votes for each validator.
 
 ![](./images/cast_vote.png)
 
-- On a periodic basis, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.
+::: tip
+
+Inside of Stake Meta:
+
+- validator_vote_account: The account representing the validator's voting authority.
+- validator_node_pubkey: The public key of the validator node.
+- maybe_tip_distribution_meta: Metadata related to tip distribution, if applicable.
+    - merkle_root_upload_authority: The authority responsible for uploading the merkle root.
+    - tip_distribution_pubkey: The pulic key owned by the Jito Tip Distribution Program.
+    - total_tips: The total amount of tips in the [`TipDistributionAccount`]
+    - validator_fee_bps: The validator's cut of tips from [`TipDistributionAccount`], calculated from the on-chain commission fee bps.
+- delegations: Delegations to this validator.
+    - stake_account_pubkey: The public key of the stake account.
+    - staker_pubkey: The public key of the staker.
+    - withdrawer_pubkey: The public key authorized to withdraw from the stake account.
+    - lamports_delegated: Lamports delegated by the stake account
+- total_delegated: The total amount of delegations to the validator.
+- commission: The validator's delegation commission rate as a percentage between 0-100.
+
+  :::
+
+- After each vote, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.
+- Operators can change their vote until consensus is reached, then they can not change their vote. Once consensus is reached, any operators who have not voted have a fixed window of slots to submit their vote in order to be eligible for rewards.
 
 ![](./images/upload.png)
 
 [Jito Tip Distribution Program]: https://github.com/jito-foundation/jito-programs/blob/master/mev-programs/programs/tip-distribution/src/lib.rs
 [to upload merkle roots]: https://github.com/jito-foundation/jito-tip-router/blob/022fee74773170b76d1f8aad8c8edc71fd387e05/program/src/set_merkle_root.rs#L61-L80
+[`TipDistributionAccount`]: https://github.com/jito-foundation/jito-programs/blob/6bf84c19db9208a16e226074c666c965f5429d88/mev-programs/programs/tip-distribution/src/state.rs#L29-L54
 
 ## NCN Program
 
@@ -44,7 +67,7 @@ Following the [NCN design section], Jito Tip Router consists of:
 
 [NCN design section]: /guide/ncn-design.md
 
-### Weight Table
+### Pricing
 
 **Permissionless Cranker**:
 
@@ -60,7 +83,7 @@ NCN admin update *weight* of supported token on Tip Router NCN.
 
 - [Update WeightTable account](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/admin_update_weight_table.rs)
 
-### Operator + Vault Snapshots
+### Snapshots (Operator + Vault)
 
 Take snapshots of Operator and Vault per epoch.
 
@@ -71,7 +94,7 @@ Aggregate all information of operators and vaults associated with NCN
 - [Initialize EpochSnapshot account](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_epoch_snapshot.rs)
 - [Initiazize OperatorSnapshot account](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_operator_snapshot.rs)
 
-### Consensus
+### Core Logic (Consensus)
 
 **Permissionless Cranker**:
 
@@ -89,7 +112,7 @@ Each operator caluclate the merkle tree to produce merkle root then cast vote wi
 
 - [Cast Vote](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/cast_vote.rs)
 
-### Distribute Rewards
+### Reward Payment
 
 IN PROGRESS
 
