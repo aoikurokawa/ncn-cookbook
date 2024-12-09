@@ -20,11 +20,38 @@
 <p>The mechanism of the TipRouter NCN is detailed below:</p>
 <ul>
 <li>Validators can delegate the merkle root upload authority to a program derived address owned by the NCN, giving it permission <a href="https://github.com/jito-foundation/jito-tip-router/blob/022fee74773170b76d1f8aad8c8edc71fd387e05/program/src/set_merkle_root.rs#L61-L80" target="_blank" rel="noopener noreferrer">to upload merkle roots</a>.</li>
-<li>After epoch rollover, node operators will each compute the merkle tree and merkle root for each validator and upload it on-chain.</li>
+<li>After the epoch rollover, node operators will compute a 'meta merkle root' — a merkle root derived from a new merkle tree containing all validator merkle trees — and upload it on-chain. This change reduces the number of votes required, as operators now vote on the meta merkle root instead of casting individual votes for each validator.</li>
 </ul>
 <p><img src="@source/references/images/cast_vote.png" alt=""></p>
+<div class="hint-container tip">
+<p class="hint-container-title">Tips</p>
+<p>Inside of Stake Meta:</p>
 <ul>
-<li>On a periodic basis, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.</li>
+<li>validator_vote_account: The account representing the validator's voting authority.</li>
+<li>validator_node_pubkey: The public key of the validator node.</li>
+<li>maybe_tip_distribution_meta: Metadata related to tip distribution, if applicable.
+<ul>
+<li>merkle_root_upload_authority: The authority responsible for uploading the merkle root.</li>
+<li>tip_distribution_pubkey: The pulic key owned by the Jito Tip Distribution Program.</li>
+<li>total_tips: The total amount of tips in the <a href="https://github.com/jito-foundation/jito-programs/blob/6bf84c19db9208a16e226074c666c965f5429d88/mev-programs/programs/tip-distribution/src/state.rs#L29-L54" target="_blank" rel="noopener noreferrer"><code v-pre>TipDistributionAccount</code></a></li>
+<li>validator_fee_bps: The validator's cut of tips from <a href="https://github.com/jito-foundation/jito-programs/blob/6bf84c19db9208a16e226074c666c965f5429d88/mev-programs/programs/tip-distribution/src/state.rs#L29-L54" target="_blank" rel="noopener noreferrer"><code v-pre>TipDistributionAccount</code></a>, calculated from the on-chain commission fee bps.</li>
+</ul>
+</li>
+<li>delegations: Delegations to this validator.
+<ul>
+<li>stake_account_pubkey: The public key of the stake account.</li>
+<li>staker_pubkey: The public key of the staker.</li>
+<li>withdrawer_pubkey: The public key authorized to withdraw from the stake account.</li>
+<li>lamports_delegated: Lamports delegated by the stake account</li>
+</ul>
+</li>
+<li>total_delegated: The total amount of delegations to the validator.</li>
+<li>commission: The validator's delegation commission rate as a percentage between 0-100.</li>
+</ul>
+</div>
+<ul>
+<li>After each vote, consensus of node operators will be checked. After ⅔ of stake agrees on a merkle root for a given validator, a cross program invocation will take place to upload the merkle root to the validator’s tip distribution account.</li>
+<li>Operators can change their vote until consensus is reached, then they can not change their vote. Once consensus is reached, any operators who have not voted have a fixed window of slots to submit their vote in order to be eligible for rewards.</li>
 </ul>
 <p><img src="@source/references/images/upload.png" alt=""></p>
 <h2 id="ncn-program" tabindex="-1"><a class="header-anchor" href="#ncn-program"><span>NCN Program</span></a></h2>
