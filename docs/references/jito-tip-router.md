@@ -67,7 +67,7 @@ Following the [NCN design section], Jito Tip Router consists of:
 
 [NCN design section]: /guide/ncn-design.md
 
-### Weight Table
+### Pricing
 
 **Permissionless Cranker**:
 
@@ -83,7 +83,7 @@ NCN admin update *weight* of supported token on Tip Router NCN.
 
 - [Update WeightTable account](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/admin_update_weight_table.rs)
 
-### Operator + Vault Snapshots
+### Snapshots (Operator + Vault)
 
 Take snapshots of Operator and Vault per epoch.
 
@@ -94,7 +94,7 @@ Aggregate all information of operators and vaults associated with NCN
 - [Initialize EpochSnapshot account](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_epoch_snapshot.rs)
 - [Initiazize OperatorSnapshot account](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_operator_snapshot.rs)
 
-### Consensus
+### Core Logic (Consensus)
 
 **Permissionless Cranker**:
 
@@ -112,7 +112,7 @@ Each operator caluclate the merkle tree to produce merkle root then cast vote wi
 
 - [Cast Vote](https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/cast_vote.rs)
 
-### Distribute Rewards
+### Reward Payment
 
 IN PROGRESS
 

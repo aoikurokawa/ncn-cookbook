@@ -62,7 +62,7 @@
 <li>Core Logic</li>
 <li>Reward Payment</li>
 </ul>
-<h3 id="weight-table" tabindex="-1"><a class="header-anchor" href="#weight-table"><span>Weight Table</span></a></h3>
+<h3 id="pricing" tabindex="-1"><a class="header-anchor" href="#pricing"><span>Pricing</span></a></h3>
 <p><strong>Permissionless Cranker</strong>:</p>
 <p>Prepare several accounts like <code v-pre>TrackedMints</code> and <code v-pre>WeightTable</code>.</p>
 <ul>
@@ -75,7 +75,7 @@
 <ul>
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/admin_update_weight_table.rs" target="_blank" rel="noopener noreferrer">Update WeightTable account</a></li>
 </ul>
-<h3 id="operator-vault-snapshots" tabindex="-1"><a class="header-anchor" href="#operator-vault-snapshots"><span>Operator + Vault Snapshots</span></a></h3>
+<h3 id="snapshots-operator-vault" tabindex="-1"><a class="header-anchor" href="#snapshots-operator-vault"><span>Snapshots (Operator + Vault)</span></a></h3>
 <p>Take snapshots of Operator and Vault per epoch.</p>
 <p><strong>Permissionless Cranker</strong>:</p>
 <p>Aggregate all information of operators and vaults associated with NCN</p>
@@ -83,7 +83,7 @@
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_epoch_snapshot.rs" target="_blank" rel="noopener noreferrer">Initialize EpochSnapshot account</a></li>
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_operator_snapshot.rs" target="_blank" rel="noopener noreferrer">Initiazize OperatorSnapshot account</a></li>
 </ul>
-<h3 id="consensus" tabindex="-1"><a class="header-anchor" href="#consensus"><span>Consensus</span></a></h3>
+<h3 id="core-logic-consensus" tabindex="-1"><a class="header-anchor" href="#core-logic-consensus"><span>Core Logic (Consensus)</span></a></h3>
 <p><strong>Permissionless Cranker</strong>:</p>
 <p>Prepare Ballot Box, all votes would be collected here.</p>
 <ul>
@@ -98,7 +98,7 @@
 <ul>
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/cast_vote.rs" target="_blank" rel="noopener noreferrer">Cast Vote</a></li>
 </ul>
-<h3 id="distribute-rewards" tabindex="-1"><a class="header-anchor" href="#distribute-rewards"><span>Distribute Rewards</span></a></h3>
+<h3 id="reward-payment" tabindex="-1"><a class="header-anchor" href="#reward-payment"><span>Reward Payment</span></a></h3>
 <p>IN PROGRESS</p>
 <h2 id="references" tabindex="-1"><a class="header-anchor" href="#references"><span>References</span></a></h2>
 <ul>
