@@ -62,6 +62,7 @@
 <li>Core Logic</li>
 <li>Reward Payment</li>
 </ul>
+<p><img src="@source/references/images/overview.png" alt=""></p>
 <h3 id="pricing" tabindex="-1"><a class="header-anchor" href="#pricing"><span>Pricing</span></a></h3>
 <p><strong>Permissionless Cranker</strong>:</p>
 <p>Prepare several accounts like <code v-pre>TrackedMints</code> and <code v-pre>WeightTable</code>.</p>
@@ -75,6 +76,7 @@
 <ul>
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/admin_update_weight_table.rs" target="_blank" rel="noopener noreferrer">Update WeightTable account</a></li>
 </ul>
+<p><img src="@source/references/images/pricing.png" alt=""></p>
 <h3 id="snapshots-operator-vault" tabindex="-1"><a class="header-anchor" href="#snapshots-operator-vault"><span>Snapshots (Operator + Vault)</span></a></h3>
 <p>Take snapshots of Operator and Vault per epoch.</p>
 <p><strong>Permissionless Cranker</strong>:</p>
@@ -83,6 +85,7 @@
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_epoch_snapshot.rs" target="_blank" rel="noopener noreferrer">Initialize EpochSnapshot account</a></li>
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/initialize_operator_snapshot.rs" target="_blank" rel="noopener noreferrer">Initiazize OperatorSnapshot account</a></li>
 </ul>
+<p><img src="@source/references/images/snapshot.png" alt=""></p>
 <h3 id="core-logic-consensus" tabindex="-1"><a class="header-anchor" href="#core-logic-consensus"><span>Core Logic (Consensus)</span></a></h3>
 <p><strong>Permissionless Cranker</strong>:</p>
 <p>Prepare Ballot Box, all votes would be collected here.</p>
@@ -98,6 +101,7 @@
 <ul>
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/cast_vote.rs" target="_blank" rel="noopener noreferrer">Cast Vote</a></li>
 </ul>
+<p><img src="@source/references/images/core_logic.png" alt=""></p>
 <h3 id="reward-payment" tabindex="-1"><a class="header-anchor" href="#reward-payment"><span>Reward Payment</span></a></h3>
 <p>IN PROGRESS</p>
 <h2 id="references" tabindex="-1"><a class="header-anchor" href="#references"><span>References</span></a></h2>
