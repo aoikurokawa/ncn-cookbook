@@ -1,5 +1,5 @@
 import comp from "/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/building-ncn/permissionless-cranker.html.vue"
-const data = JSON.parse("{\"path\":\"/building-ncn/permissionless-cranker.html\",\"title\":\"Permissionless Cranker\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"building-ncn/permissionless-cranker.md\"}")
+const data = JSON.parse("{\"path\":\"/building-ncn/permissionless-cranker.html\",\"title\":\"Permissionless Cranker\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1733775661000,\"contributors\":[{\"name\":\"Aoi Kurokawa\",\"email\":\"62386689+aoikurokawa@users.noreply.github.com\",\"commits\":1,\"url\":\"https://github.com/Aoi Kurokawa\"}]},\"filePathRelative\":\"building-ncn/permissionless-cranker.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
