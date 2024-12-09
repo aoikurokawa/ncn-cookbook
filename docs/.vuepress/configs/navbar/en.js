@@ -21,41 +21,6 @@ export const navbarEn = [
       }
     ],
   },
-
-  {
-    text: "Learn More",
-    children: [
-      {
-        text: "Advanced",
-        children: [
-          "/advanced/architecture.md",
-          "/advanced/plugin.md",
-          "/advanced/theme.md",
-          {
-            text: "Cookbook",
-            link: "/advanced/cookbook/",
-          },
-        ],
-      },
-      {
-        text: "Resources",
-        children: [
-          {
-            text: "Ecosystem",
-            link: "https://ecosystem.vuejs.press/",
-          },
-          {
-            text: "MarketPlace",
-            link: "https://marketplace.vuejs.press",
-          },
-          {
-            text: "Contributing Guide",
-            link: "https://github.com/vuepress/core/blob/main/CONTRIBUTING.md",
-          },
-        ],
-      },
-    ],
-  },
 //   {
 //     text: `v${VERSION}`,
 //     children: [

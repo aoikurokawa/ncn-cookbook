@@ -4,12 +4,25 @@ export const sidebarEn = {
   '/': [
     {
       text: 'Introduction',
+      collapsible: true,
       children: [
-        '/introduction/introduction.md',
+        '/introduction/jito-restaking.md',
+        '/introduction/ncn-overview.md',
+      ],
+    },
+    {
+      text: 'Core Concepts',
+      collapsible: true,
+      children: [
+        '/core-concepts/overview.md',
+        '/core-concepts/ncn.md',
+        '/core-concepts/operator.md',
+        '/core-concepts/vault.md',
       ],
     },
     {
       text: 'Getting Started',
+      collapsible: true,
       children: [
         '/getting-started/installation.md',
         '/getting-started/rust-client.md',
@@ -18,25 +31,34 @@ export const sidebarEn = {
       ],
     },
     {
-      text: 'Core Concepts',
-      children: [
-        '/core-concepts/ncn.md',
-        '/core-concepts/operator.md',
-        '/core-concepts/vault.md',
-      ],
-    },
-    {
-      text: 'Guides',
+      text: 'Integrating with Jito Restaking',
       children: [
         '/guide/restaking-program.md',
         '/guide/vault-program.md',
-        '/guide/ncn-design.md',
+      ],
+    },
+    {
+      text: 'Building NCN',
+      children: [
+        '/building-ncn/ncn-design.md',
+        '/building-ncn/pricing.md',
+        '/building-ncn/snapshot.md',
+        '/building-ncn/core-logic.md',
+        '/building-ncn/reward-payments.md',
       ],
     },
     {
       text: 'References',
       children: [
+        '/references/overview.md',
         '/references/jito-tip-router.md',
+      ],
+    },
+    {
+      text: 'Developer Resources',
+      collapsible: true,
+      children: [
+        '/developer-resources/developer-resources.md',
       ],
     },
   ],

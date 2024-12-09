@@ -1,6 +1,5 @@
 # NCN
 
-
 ## Overview
 
 ### Key functionalities include:
