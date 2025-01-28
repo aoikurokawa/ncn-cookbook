@@ -32,7 +32,7 @@
 <li>maybe_tip_distribution_meta: Metadata related to tip distribution, if applicable.
 <ul>
 <li>merkle_root_upload_authority: The authority responsible for uploading the merkle root.</li>
-<li>tip_distribution_pubkey: The pulic key owned by the Jito Tip Distribution Program.</li>
+<li>tip_distribution_pubkey: The public key owned by the Jito Tip Distribution Program.</li>
 <li>total_tips: The total amount of tips in the <a href="https://github.com/jito-foundation/jito-programs/blob/6bf84c19db9208a16e226074c666c965f5429d88/mev-programs/programs/tip-distribution/src/state.rs#L29-L54" target="_blank" rel="noopener noreferrer"><code v-pre>TipDistributionAccount</code></a></li>
 <li>validator_fee_bps: The validator's cut of tips from <a href="https://github.com/jito-foundation/jito-programs/blob/6bf84c19db9208a16e226074c666c965f5429d88/mev-programs/programs/tip-distribution/src/state.rs#L29-L54" target="_blank" rel="noopener noreferrer"><code v-pre>TipDistributionAccount</code></a>, calculated from the on-chain commission fee bps.</li>
 </ul>
@@ -55,7 +55,7 @@
 </ul>
 <p><img src="@source/references/images/upload.png" alt=""></p>
 <h2 id="ncn-program" tabindex="-1"><a class="header-anchor" href="#ncn-program"><span>NCN Program</span></a></h2>
-<p>Following the <RouteLink to="/guide/ncn-design.html">NCN design section</RouteLink>, Jito Tip Router consists of:</p>
+<p>Following the <RouteLink to="/building-ncn/ncn-design.html#onchain-ncn-program">NCN design section</RouteLink>, Jito Tip Router consists of:</p>
 <ul>
 <li>Pricing</li>
 <li>Snapshot</li>
@@ -97,7 +97,7 @@
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/set_merkle_root.rs" target="_blank" rel="noopener noreferrer">Set Merkle Root</a></li>
 </ul>
 <p><strong>Operator</strong>:</p>
-<p>Each operator caluclate the merkle tree to produce merkle root then cast vote with produced merkle root.</p>
+<p>Each operator calculate the merkle tree to produce merkle root then cast vote with produced merkle root.</p>
 <ul>
 <li><a href="https://github.com/jito-foundation/jito-tip-router/blob/master/program/src/cast_vote.rs" target="_blank" rel="noopener noreferrer">Cast Vote</a></li>
 </ul>

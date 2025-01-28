@@ -1,5 +1,5 @@
 import comp from "/mnt/nvme0n1/dev/ncn-cookbook/docs/.vuepress/.temp/pages/core-concepts/overview.html.vue"
-const data = JSON.parse("{\"path\":\"/core-concepts/overview.html\",\"title\":\"Overview\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Jito Restaking Architecture Overview\",\"slug\":\"jito-restaking-architecture-overview\",\"link\":\"#jito-restaking-architecture-overview\",\"children\":[]}],\"git\":{\"updatedTime\":1733775661000,\"contributors\":[{\"name\":\"Aoi Kurokawa\",\"email\":\"62386689+aoikurokawa@users.noreply.github.com\",\"commits\":1,\"url\":\"https://github.com/Aoi Kurokawa\"}]},\"filePathRelative\":\"core-concepts/overview.md\"}")
+const data = JSON.parse("{\"path\":\"/core-concepts/overview.html\",\"title\":\"Overview\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Jito Restaking Architecture Overview\",\"slug\":\"jito-restaking-architecture-overview\",\"link\":\"#jito-restaking-architecture-overview\",\"children\":[]}],\"git\":{\"updatedTime\":1733777679000,\"contributors\":[{\"name\":\"Aoi Kurokawa\",\"email\":\"62386689+aoikurokawa@users.noreply.github.com\",\"commits\":2,\"url\":\"https://github.com/Aoi Kurokawa\"}]},\"filePathRelative\":\"core-concepts/overview.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

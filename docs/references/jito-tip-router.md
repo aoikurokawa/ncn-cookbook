@@ -67,7 +67,7 @@ Following the [NCN design section], Jito Tip Router consists of:
 ![](./images/overview.png)
 
 
-[NCN design section]: /guide/ncn-design.md
+[NCN design section]: /building-ncn/ncn-design.html#onchain-ncn-program
 
 ### Pricing
 
