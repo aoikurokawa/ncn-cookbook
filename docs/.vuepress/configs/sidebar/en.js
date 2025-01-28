@@ -33,8 +33,8 @@ export const sidebarEn = {
     {
       text: 'Integrating with Jito Restaking',
       children: [
-        '/guide/restaking-program.md',
-        '/guide/vault-program.md',
+        '/integrating-with-jito-restaking/restaking-program.md',
+        '/integrating-with-jito-restaking/vault-program.md',
       ],
     },
     {
